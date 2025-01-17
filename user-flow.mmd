@@ -1,0 +1,9 @@
+flowchart TD
+    Request_Ride[Request Ride] --> Cancelled[Cancelled]
+    Request_Ride[Request Ride] --> Driver_Found[Driver Found]
+    Driver_Found[Driver Found] --> Ride_Denied[Ride Denied]
+    Driver_Found[Driver Found] --> Ride_Accepted[Ride Accepted]
+    Ride_Accepted[Ride Accepted] --> Trip_Started[Trip Started]
+    Trip_Started[Trip Started] --> Trip_Completed[Trip Completed]
+    Trip_Completed[Trip Completed] --> Collect_Payment[Collect Payment]
+    Collect_Payment[Collect Payment] --> Rate_Driver[Rate Driver]
